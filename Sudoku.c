@@ -49,33 +49,33 @@ void main() {
 		// Difficulty Selection
 		do {
 
-				printf("Please select Difficulty for new game or quit:\n\n- (e)asy\n- (n)ormal\n- (h)ard\n\n- e(x)it\n\n");
-				scanf_s("%s", UserInput, 2);
+			printf("Please select Difficulty for new game or quit:\n\n- (e)asy\n- (n)ormal\n- (h)ard\n\n- e(x)it\n\n");
+			scanf_s("%s", UserInput, 2);
 
-				switch (UserInput[0]) {
-				case 'e':
-					DifficultySet = easy;
-					InputLoop = false;
-					break;
+			switch (UserInput[0]) {
+			case 'e':
+				DifficultySet = easy;
+				InputLoop = false;
+				break;
 
-				case 'n':
-					DifficultySet = normal;
-					InputLoop = false;
-					break;
+			case 'n':
+				DifficultySet = normal;
+				InputLoop = false;
+				break;
 
-				case 'h':
-					DifficultySet = hard;
-					InputLoop = false;
-					break;
+			case 'h':
+				DifficultySet = hard;
+				InputLoop = false;
+				break;
 
-				case 'x':
-					return 0;
-					break;
-				default:
-					printf("Invalid Input!\n");
-					InputLoop++;
-					break;
-				}
+			case 'x':
+				return 0;
+				break;
+			default:
+				printf("Invalid Input!\n");
+				InputLoop++;
+				break;
+			}
 
 
 		} while (InputLoop);
